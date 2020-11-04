@@ -24,8 +24,8 @@ branches:
 
 deploy:
   provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  cleanup: true
+  token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
   local_dir: _build
   target_branch: gh-pages
   keep_history: true
