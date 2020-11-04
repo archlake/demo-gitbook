@@ -17,6 +17,7 @@ script:
   - gitbook install # add any requested plugins in book.json
   - book sm
   - gitbook build . _build # build to public path
+  - ls -l _build
 
 branches:
   only:
