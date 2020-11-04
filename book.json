@@ -1,0 +1,19 @@
+{
+  "gitbook": ">=3.1.0",
+  "title": "Document",
+  "language": "zh-hans",
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": false
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans", 
+      "size": 2  
+    }
+  },
+  "sortedBy": "num+",
+  "ignores": ["!*/.md", "_book", ".*", "node_modules"],
+  "disableTitleFormatting": true,
+  "plugins": ["-lunr", "-search", "search-plus", "splitter", "expandable-chapters-small", "todo", "mermaid-gb3", "anchor-navigation-ex"]
+}

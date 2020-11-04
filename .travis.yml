@@ -1,0 +1,33 @@
+# 参考 https://docs.travis-ci.com/user/deployment/pages/
+language: node_js
+
+node_js:
+  - "10"
+
+cache:
+  directories:
+    - $HOME/.npm
+
+install:
+  - npm install gitbook-cli -g # install gitbook, 可以在定制容器中提前安装
+  - npm install -g gitbook-summary # 可以在定制容器中提前安装
+  - gitbook fetch 3.2.3 # fetch final stable version. 可以在定制容器中提前安
+
+script:
+  - gitbook install # add any requested plugins in book.json
+  - book sm
+  - gitbook build . _build # build to public path
+
+branches:
+  only:
+    - main 
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+  local_dir: _build
+  target_branch: gh-pages
+  keep_history: true
+  on:
+    branch: main
