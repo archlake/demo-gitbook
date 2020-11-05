@@ -1,0 +1,21 @@
+image: node:10 # 可以在runner中指定默认容器,然后省略此声明
+
+before_script:
+  - npm install gitbook-cli -g # install gitbook, 可以在定制容器中提前安装
+  - npm install -g gitbook-summary # 可以在定制容器中提前安装
+  - gitbook fetch 3.2.3 # fetch final stable version. 可以在定制容器中提前安装
+
+pages:
+  stage: deploy
+  script:
+    - gitbook install # add any requested plugins in book.json
+    - book sm
+    - gitbook build . public # build to public path
+  artifacts:
+    paths:
+      - public
+    expire_in: 5 mins
+  only:
+    - main # this job will affect only the 'main' branch
+  #tags:
+  #  - shared-gitlab-pages-gitbook
