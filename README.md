@@ -26,14 +26,12 @@
 #### 2.1.3. local build 
 
 ```
-
 npm install gitbook-cli -g 
 npm install -g gitbook-summary 
 gitbook fetch 3.2.3
 gitbook install 
 book sm
 gitbook build .
-
 ```
 
 ### 2.2. 插件使用说明
