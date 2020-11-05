@@ -1,5 +1,8 @@
 # Demo GitBook
 
+- 仓库地址: https://github.com/archlake/demo-gitbook
+- 文档地址: https://gitbook.demo.archlake.net/
+
 ## 1. 主要功能
 
 - 支持中文和英文全文搜索; 
