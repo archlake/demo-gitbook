@@ -17,11 +17,11 @@
 
 #### 2.1.1. Travis CI
 
-见 `.travis.yml`
+见 [.travis.yml](https://github.com/archlake/demo-gitbook/blob/main/.travis.yml)
 
 #### 2.1.2. Gitlab CI
 
-见 `.gitlab-ci.yml`
+见 [.gitlab-ci.yml](https://github.com/archlake/demo-gitbook/blob/main/.gitlab-ci.yml)
 
 #### 2.1.3. local build 
 
