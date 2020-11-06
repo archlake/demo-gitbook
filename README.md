@@ -1,5 +1,8 @@
 # Demo GitBook
 
+
+[![Build Status](https://travis-ci.org/archlake/demo-gitbook.svg?branch=main)](https://travis-ci.org/github/archlake/demo-gitbook)
+
 - 仓库地址: https://github.com/archlake/demo-gitbook
 - 文档地址: https://gitbook.demo.archlake.net/
 
